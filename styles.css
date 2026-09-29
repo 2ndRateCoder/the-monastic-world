@@ -332,7 +332,7 @@ h2 {
     max-width: none;
     aspect-ratio: auto;
     height: 44svh;
-    margin: 12px auto 0;
+    margin: calc(84px + env(safe-area-inset-top)) auto 0;
     background: var(--cream);
     border-radius: 20px;
     box-shadow: 0 16px 40px -12px rgba(36, 63, 197, 0.16), 0 2px 8px rgba(52, 59, 80, 0.08);
