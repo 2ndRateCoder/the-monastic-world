@@ -68,7 +68,10 @@
     video.style.display = "block";
     if (!videoReady || !Number.isFinite(duration) || duration <= 0) return;
 
-    const targetTime = progress * duration;
+    // The video ping-pongs (hand-drawn -> geometric -> hand-drawn) so it loops
+    // seamlessly; the morph peak is at the halfway point. Scrub only the
+    // first half so scrolling settles on the geometric version.
+    const targetTime = progress * (duration / 2);
     if (Math.abs(video.currentTime - targetTime) > 0.016) {
       try { video.currentTime = targetTime; } catch (_) {}
     }
