@@ -106,7 +106,7 @@ a { color: inherit; }
 .hero-scroll {
   position: relative;
   height: 250vh;
-  background: var(--cream-hero);
+  background: var(--cream);
 }
 .hero-sticky {
   position: sticky;
