@@ -183,9 +183,9 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 520px;
-  aspect-ratio: 384 / 492;
+  aspect-ratio: 720 / 910;
   overflow: hidden;
-  background: #000;
+  background: var(--art-bg);
   border-radius: 22px;
   box-shadow: 0 20px 50px -12px rgba(36, 63, 197, 0.16), 0 2px 8px rgba(52, 59, 80, 0.08);
 }
@@ -331,10 +331,10 @@ h2 {
   .media-stage {
     width: calc(100% - (var(--pad) * 2));
     max-width: none;
-    aspect-ratio: 384 / 492;
+    aspect-ratio: 720 / 910;
     height: auto;
     margin: calc(72px + env(safe-area-inset-top)) auto 0;
-    background: #000;
+    background: var(--art-bg);
     border-radius: 20px;
     box-shadow: 0 16px 40px -12px rgba(36, 63, 197, 0.16), 0 2px 8px rgba(52, 59, 80, 0.08);
   }
