@@ -1,6 +1,7 @@
 :root {
   --cream: #fafaf5;
   --cream-hero: #f8f6e6;
+  --art-bg: #f7f0dc;
   --ink: #243fc5;
   --blue: #243fc5;
   --yellow: #f1e269;
@@ -162,7 +163,7 @@ h1 {
   display: inline-block;
   font: 600 15px/1 var(--sans);
   letter-spacing: 0.02em;
-  color: #fff;
+  color: var(--art-bg);
   background: var(--blue);
   padding: 17px 38px;
   border-radius: 999px;
@@ -184,7 +185,7 @@ h1 {
   max-width: 520px;
   aspect-ratio: 720 / 910;
   overflow: hidden;
-  background: var(--cream);
+  background: var(--art-bg);
   border-radius: 22px;
   box-shadow: 0 20px 50px -12px rgba(36, 63, 197, 0.16), 0 2px 8px rgba(52, 59, 80, 0.08);
 }
