@@ -8,7 +8,7 @@
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)");
-  const FRAME_COUNT = 34;
+  const FRAME_COUNT = 30;
   const COMPLETE_AT = 0.5;
   const frameUrls = Array.from(
     { length: FRAME_COUNT },
@@ -38,7 +38,7 @@
   function showPoster() {
     video.style.display = "none";
     frame.style.display = "block";
-    frame.src = "./assets/mobius-strip.png";
+    frame.src = "./assets/hero-poster.jpg";
   }
 
   function renderFrameSequence(progress) {
